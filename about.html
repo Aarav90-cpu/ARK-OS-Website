@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Arphd4 — ARK-OS</title>
+  <meta name="description" content="Meet Arphd4, the creator of ARK-OS at ARK Industries, India." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/about-style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header id="main-header">
+    <div class="header-inner">
+      <a href="/" class="logo-link">
+        <img src="/logo.png" alt="ARK-OS" class="logo" />
+        <span class="logo-text">ARK-OS</span>
+      </a>
+      <nav>
+        <md-text-button href="/">Home</md-text-button>
+        <md-text-button href="/about.html">About</md-text-button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-hero">
+      <!-- Avatar -->
+      <div class="avatar-wrapper">
+        <div class="avatar-ring">
+          <img src="https://avatars.githubusercontent.com/u/194655408?v=4" alt="Arphd4" class="avatar-img" />
+        </div>
+        <div class="avatar-status"></div>
+      </div>
+
+      <!-- Profile Info -->
+      <h1 class="profile-name">Arphd4</h1>
+      <p class="profile-handle">@Aarav90-cpu</p>
+
+      <div class="profile-org">
+        <span class="material-symbols-outlined">apartment</span>
+        ARK Industries · India
+      </div>
+
+      <p class="profile-bio">
+        Creator of ARK-OS. Building a bloat-free, open-source operating system
+        powered by the Linux Kernel and Swift. Focused on perfection.
+      </p>
+
+      <!-- GitHub Stats -->
+      <div class="profile-stats">
+        <div class="stat">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Repos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Followers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Following</span>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div class="profile-actions">
+        <md-outlined-button href="https://github.com/Aarav90-cpu" target="_blank">
+          <span class="material-symbols-outlined" slot="icon">code</span>
+          View GitHub
+        </md-outlined-button>
+        <md-outlined-button href="https://ark-os.duckdns.org/" target="_blank">
+          <span class="material-symbols-outlined" slot="icon">archive</span>
+          ARK-OS Repo
+        </md-outlined-button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="ARK-OS" class="footer-logo" />
+        <span class="footer-name">ARK-OS</span>
+      </div>
+      <p class="footer-text">An open-source OS by <a href="/about.html">Arphd4</a> at ARK Industries.</p>
+    </div>
+  </footer>
+
+  <script type="module">
+    import '@material/web/all.js';
+    import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARK-OS — No Bloat. Just Perfect.</title>
+  <meta name="description" content="ARK-OS is an open-source operating system built on the Linux Kernel and powered by Swift. No bloat, just perfect." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Animated Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <header id="main-header">
+    <div class="header-inner">
+      <a href="/" class="logo-link">
+        <img src="/logo.png" alt="ARK-OS" class="logo" />
+        <span class="logo-text">ARK-OS</span>
+      </a>
+      <nav>
+        <md-text-button href="/">Home</md-text-button>
+        <md-text-button href="/about.html">About</md-text-button>
+        <md-filled-tonal-button href="https://ark-os.duckdns.org/" target="_blank">
+          <span class="material-symbols-outlined" slot="icon">code</span>
+          Source Code
+        </md-filled-tonal-button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-badge animate-in">
+        <md-chip-set>
+          <md-assist-chip label="Open Source" elevated>
+            <span class="material-symbols-outlined" slot="icon">lock_open</span>
+          </md-assist-chip>
+          <md-assist-chip label="Linux Kernel" elevated>
+            <span class="material-symbols-outlined" slot="icon">terminal</span>
+          </md-assist-chip>
+          <md-assist-chip label="Swift" elevated>
+            <span class="material-symbols-outlined" slot="icon">speed</span>
+          </md-assist-chip>
+        </md-chip-set>
+      </div>
+
+      <h1 class="hero-title animate-in delay-1">
+        <span class="gradient-text">ARK-OS</span>
+      </h1>
+      <p class="hero-tagline animate-in delay-2">No bloat. Just perfect.</p>
+      <p class="hero-subtitle animate-in delay-3">
+        A next-generation operating system built on the <strong>Linux Kernel</strong>
+        and powered by <strong>Swift</strong>. Designed for speed, simplicity, and elegance.
+      </p>
+
+      <div class="hero-actions animate-in delay-4">
+        <md-filled-button href="https://ark-os.duckdns.org/" target="_blank">
+          <span class="material-symbols-outlined" slot="icon">explore</span>
+          Explore Repository
+        </md-filled-button>
+        <md-outlined-button href="/about.html">
+          <span class="material-symbols-outlined" slot="icon">person</span>
+          Meet the Creator
+        </md-outlined-button>
+      </div>
+
+      <div class="hero-status animate-in delay-5">
+        <div class="status-pill early-dev">
+          <span class="status-dot"></span>
+          <span>Still under early development</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2 class="section-title scroll-reveal">Built Different</h2>
+      <p class="section-subtitle scroll-reveal">Two powerful technologies, one perfect OS.</p>
+
+      <div class="features-grid">
+        <!-- Linux Kernel Card -->
+        <a href="https://github.com/torvalds/linux" target="_blank" class="feature-card linux-card scroll-reveal">
+          <div class="linux-logo-bg">
+            <!-- Tux SVG -->
+            <svg viewBox="0 0 100 120" class="tux-icon" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="50" cy="95" rx="30" ry="12" fill="#333"/>
+              <ellipse cx="50" cy="60" rx="28" ry="35" fill="#FFC107"/>
+              <ellipse cx="50" cy="55" rx="24" ry="30" fill="#1a1a2e"/>
+              <ellipse cx="50" cy="30" rx="20" ry="22" fill="#1a1a2e"/>
+              <ellipse cx="50" cy="48" rx="16" ry="10" fill="#FFC107"/>
+              <circle cx="42" cy="26" r="4" fill="white"/>
+              <circle cx="58" cy="26" r="4" fill="white"/>
+              <circle cx="43" cy="25" r="2" fill="#111"/>
+              <circle cx="59" cy="25" r="2" fill="#111"/>
+              <ellipse cx="50" cy="34" rx="4" ry="2.5" fill="#E65100"/>
+            </svg>
+          </div>
+          <div class="linux-content">
+            <h3 class="linux-title">Linux Kernel</h3>
+            <p class="linux-description">
+              Rock-solid foundation. ARK-OS is built on the Linux Kernel — the most battle-tested,
+              performant, and widely deployed kernel in the world.
+            </p>
+            <div class="linux-features">
+              <div class="linux-feature">
+                <span class="material-symbols-outlined">security</span>
+                <span>Battle-Tested</span>
+              </div>
+              <div class="linux-feature">
+                <span class="material-symbols-outlined">hub</span>
+                <span>Community Driven</span>
+              </div>
+              <div class="linux-feature">
+                <span class="material-symbols-outlined">developer_board</span>
+                <span>Hardware Support</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-label">
+            <span class="material-symbols-outlined">terminal</span>
+            <span>Powered by Linux Kernel →</span>
+          </div>
+        </a>
+
+        <!-- Swift Card -->
+        <a href="https://github.com/apple/swift" target="_blank" class="feature-card swift-card scroll-reveal delay-scroll-1">
+          <div class="swift-logo-bg">
+            <!-- Swift bird icon -->
+            <svg viewBox="0 0 256 256" class="swift-bird" xmlns="http://www.w3.org/2000/svg">
+              <path d="M141.8 35.2c38.8 31.6 60.2 76.6 53.2 114.4 0 0 1-1.8 2.6-5.4 18-39 6.8-90-30.2-128.4 0 0 15.6 44.8-22.4 83.6C117.4 71.6 81 39 81 39c41.6 48.8 60 78.4 60 78.4-16-13-65.6-52.2-95.2-68.6 11.2 15.2 40 49 57.2 68.2-20-11.2-46.2-23.6-64.4-28.6 51.4 40.6 76.6 76.6 76.6 76.6l-1 .4c-30.4 14.2-67.8 13.8-103.4-4.8-4.6-2.4-9-5.2-13.4-8.4C17.4 199.8 62.2 236 117 236c38.2 0 72.4-17.6 95-45.4.4-.4.6-.8 1-1.4 8.2-11 14.2-23.6 17.4-37.4 9.2-39.8-12.4-84-88.6-117z" fill="url(#swift-gradient)"/>
+              <defs>
+                <linearGradient id="swift-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F05138"/>
+                  <stop offset="100%" stop-color="#FC3221"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="swift-content">
+            <h3 class="swift-title">Swift</h3>
+            <p class="swift-description">
+              Native performance meets elegant syntax. ARK-OS leverages Swift for blazing-fast system applications,
+              fluid animations, and a developer experience that feels like magic.
+            </p>
+            <div class="swift-features">
+              <div class="swift-feature">
+                <span class="material-symbols-outlined">bolt</span>
+                <span>Lightning Fast</span>
+              </div>
+              <div class="swift-feature">
+                <span class="material-symbols-outlined">memory</span>
+                <span>Memory Safe</span>
+              </div>
+              <div class="swift-feature">
+                <span class="material-symbols-outlined">palette</span>
+                <span>Expressive</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-label">
+            <span class="material-symbols-outlined">speed</span>
+            <span>Built with Swift →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Clone Section -->
+    <section class="clone-section" id="get-started">
+      <h2 class="section-title scroll-reveal">Get the Source</h2>
+      <p class="section-subtitle scroll-reveal">ARK-OS is fully open source. Clone it, build it, make it yours.</p>
+
+      <div class="clone-card scroll-reveal">
+        <div class="clone-methods">
+          <div class="clone-method">
+            <div class="clone-label">
+              <span class="material-symbols-outlined">link</span>
+              <span>HTTPS</span>
+            </div>
+            <div class="clone-command" id="clone-https">
+              <code>git clone https://duckdns.org/Aarav90-cpu/ARK-OS.git</code>
+              <md-icon-button id="copy-https" aria-label="Copy HTTPS clone URL">
+                <span class="material-symbols-outlined">content_copy</span>
+              </md-icon-button>
+            </div>
+          </div>
+          <div class="clone-method">
+            <div class="clone-label">
+              <span class="material-symbols-outlined">key</span>
+              <span>SSH</span>
+            </div>
+            <div class="clone-command" id="clone-ssh">
+              <code>git clone git@ark-os.duckdns.org:Aarav90-cpu/ARK-OS.git</code>
+              <md-icon-button id="copy-ssh" aria-label="Copy SSH clone URL">
+                <span class="material-symbols-outlined">content_copy</span>
+              </md-icon-button>
+            </div>
+          </div>
+        </div>
+        <div class="clone-actions">
+          <md-filled-button href="https://ark-os.duckdns.org/" target="_blank">
+            <span class="material-symbols-outlined" slot="icon">open_in_new</span>
+            Browse on Git Server
+          </md-filled-button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy" id="philosophy">
+      <div class="philosophy-grid">
+        <div class="philosophy-card scroll-reveal">
+          <span class="material-symbols-outlined philosophy-icon">delete_sweep</span>
+          <h3>No Bloat</h3>
+          <p>Every component earns its place. No unnecessary services, no wasted resources.</p>
+        </div>
+        <div class="philosophy-card scroll-reveal delay-scroll-1">
+          <span class="material-symbols-outlined philosophy-icon">shield</span>
+          <h3>Secure</h3>
+          <p>Memory-safe Swift core on a battle-tested Linux foundation.</p>
+        </div>
+        <div class="philosophy-card scroll-reveal delay-scroll-2">
+          <span class="material-symbols-outlined philosophy-icon">auto_awesome</span>
+          <h3>Just Perfect</h3>
+          <p>Crafted with obsessive attention to detail in every layer of the stack.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/logo.png" alt="ARK-OS" class="footer-logo" />
+        <span class="footer-name">ARK-OS</span>
+      </div>
+      <p class="footer-text">An open-source OS by <a href="/about.html">Arphd4</a> at ARK Industries.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
