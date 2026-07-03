@@ -1,0 +1,1 @@
+import{t as e}from"./md-typescale-styles-BenEwJKs.js";document.adoptedStyleSheets.push(e.styleSheet);
